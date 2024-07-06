@@ -10,7 +10,7 @@ class Telegram:
     OWNER_ID = int(env.get('OWNER_ID', '5255176126'))
     TO_CHANNEL = int(env.get("TO_CHANNEL", "-1002207001310"))   # Logs channel for user logs
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL', "mongodb+srv://fehebaw351:nHbjrujWqgqLR58H@cluster0.lekn97z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
+    DATABASE_URL = str(env.get('DATABASE_URL', "mongodb+srv://tmr624062:5Bm5K02Z5PZMqtqa@cluster0.zy0l7qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
     DATABASE_NAME = env.get("DATABASE_NAME", "cluste0")
     COLLECTION_NAME = env.get('COLLECTION_NAME', 'Data')
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "TMR_update_channel"))
@@ -27,7 +27,7 @@ class Telegram:
     ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", "-1002207001310"))   # Logs channel for user logs
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
-    AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
+    AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "5580994329 5255176126 7063650557")).split()))
 
 class Server:
     PORT = int(env.get("PORT", 8080))
